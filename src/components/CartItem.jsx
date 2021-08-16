@@ -5,7 +5,8 @@ const CartItem = (props) => {
     <p className="cart-item">
       Item:
       <strong> {props.item.title}</strong> - price{" "}
-      <strong> {props.item.price} eur</strong>
+      <strong> {props.item.price} eur </strong>
+      <span> Discount: xx %</span>
     </p>
   );
 };

@@ -10,6 +10,8 @@ const Cart = (props) => {
           <CartItem item={item} key={item.id} />
         ))}
       </div>
+      <br />
+      Discount: XX
     </div>
   );
 };

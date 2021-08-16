@@ -1,7 +1,19 @@
+import React, { useState } from "react";
 import "./App.css";
+import Cart from "./components/Cart";
 
 function App() {
-  return <div className="App">COntext cart</div>;
+  const [cartItems, setCartItems] = useState([
+    { id: 1, title: "Sport Shoes", price: 50 },
+    { id: 2, title: "Basketball", price: 30 },
+    { id: 3, title: "Baseball bat", price: 40 },
+  ]);
+  return (
+    <div className="App">
+      <h3>Context cart</h3>
+      <Cart />
+    </div>
+  );
 }
 
 export default App;

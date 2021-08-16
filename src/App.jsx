@@ -10,7 +10,7 @@ function App() {
   ]);
   return (
     <div className="App">
-      <h3>Context cart</h3>
+      <h3>Context cart App component</h3>
       <Cart cartItems={cartItems} />
     </div>
   );

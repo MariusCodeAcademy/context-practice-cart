@@ -11,3 +11,9 @@
 .cart-item {
   margin: 0.4em 0;
 }
+
+.discount {
+  text-decoration: line-through;
+  opacity: 0.6;
+  font-weight: normal;
+}

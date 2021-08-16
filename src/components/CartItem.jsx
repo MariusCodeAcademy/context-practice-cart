@@ -15,6 +15,9 @@ const CartItem = (props) => {
       )}
       <span> Discount: {context.discount}%</span>
       <button onClick={context.onApplyDiscount}>Apply discount to all</button>
+      <button onClick={() => context.onApplyDiscountSingle(props.item.id)}>
+        aplly single discount
+      </button>
     </p>
   );
 };

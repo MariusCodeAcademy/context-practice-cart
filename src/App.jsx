@@ -17,7 +17,8 @@ function App() {
   const applyDiscount = () => {
     console.log("hello from applyDiscount");
     // make discount work
-    // { id: 1, title: "Sport Shoes", price: 50 }, => { id: 1, title: "Sport Shoes", price: 50, discountedPrice }
+    // { id: 1, title: "Sport Shoes", price: 50 }, =>
+    // { id: 1, title: "Sport Shoes", price: 50, discountedPrice: }
     const cartItemsWithDiscount = cartItems.map((item) => {
       const discountedPrice = item.price - item.price * (discount / 100);
 
@@ -28,12 +29,16 @@ function App() {
     });
     setCartItems(cartItemsWithDiscount);
   };
+  const applyDiscountSingle = (id) => {
+    console.log("discount will be added to item with id:", id);
+  };
 
   return (
     <ItemContext.Provider
       value={{
         discount,
         onApplyDiscount: applyDiscount,
+        onApplyDiscountSingle: applyDiscountSingle,
       }}
     >
       <div className="App">

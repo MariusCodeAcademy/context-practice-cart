@@ -4,8 +4,8 @@
 1. Sukurti funkcini krepselio komponetna (Cart)
 2. Isitrauki i App.jsx // done
 3. App.jsx yra state su hook kuriame bus cart = [{id: 1, title: 'batai', price: 50}...] // done
-4. Susikuriam funckini CartItem
-5. generuojam cartItem is Cart
+4. Susikuriam funckini CartItem // tuscias bet yra
+5. generuojam cartItem is Cart //
 6. susikurti ItemContext.js
 7. App.js suteiki konteksta ir i ji paduoti discount reiksme
 8. CartItem mes norim gauti App.jsx discount reiksme naudojant context, atvaizduoti nuolaidos reiksme

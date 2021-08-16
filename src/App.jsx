@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <h3>Context cart</h3>
-      <Cart />
+      <Cart cartItems={cartItems} />
     </div>
   );
 }

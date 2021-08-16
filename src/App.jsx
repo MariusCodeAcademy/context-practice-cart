@@ -11,8 +11,20 @@ function App() {
   ]);
   const [discount, setDiscount] = useState(20);
 
+  // sukurti applyDiscount funkcija ir joje iskonsolinti kad veikia.
+  const applyDiscount = () => {
+    console.log("hello from applyDiscount");
+  };
+  // perduoti funkcija i context value,
+  // pasiimiti ja CartIteme ir ten ivygdyti paspaudus mygtuka
+
   return (
-    <ItemContext.Provider value={discount}>
+    <ItemContext.Provider
+      value={{
+        discount,
+        onApplyDiscount: applyDiscount,
+      }}
+    >
       <div className="App">
         <h3>Context cart App component</h3>
         <Cart cartItems={cartItems} />

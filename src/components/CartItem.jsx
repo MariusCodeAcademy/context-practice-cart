@@ -8,7 +8,8 @@ const CartItem = (props) => {
       Item:
       <strong> {props.item.title}</strong> - price{" "}
       <strong> {props.item.price} eur </strong>
-      <span> Discount: {context}%</span>
+      <span> Discount: {context.discount}%</span>
+      <button onClick={context.onApplyDiscount}>Apply discount to all</button>
     </p>
   );
 };
